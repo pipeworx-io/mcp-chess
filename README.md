@@ -1,36 +1,54 @@
-# @pipeworx/mcp-chess
+# mcp-chess
 
-MCP server for the [Chess.com API](https://www.chess.com/news/view/published-data-api) — player profiles, game statistics, monthly game archives, and leaderboards. Free, no auth required.
+Chess.com MCP — wraps the Chess.com public API (free, no auth)
+
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 250+ live data sources.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
-| `get_player` | Get a player's public profile |
-| `get_stats` | Get ratings and win/loss/draw records across all formats |
-| `get_games` | Get a player's games for a specific month |
-| `get_leaderboards` | Get top-ranked players across game formats |
 
 ## Quick Start
 
-Add to your MCP client config:
+Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 
 ```json
 {
   "mcpServers": {
     "chess": {
-      "type": "url",
-      "url": "https://gateway.pipeworx.io/chess"
+      "url": "https://gateway.pipeworx.io/chess/mcp"
     }
   }
 }
 ```
 
-## CLI Usage
+Or connect to the full Pipeworx gateway for access to all 250+ data sources:
 
-```bash
-npx @anthropic-ai/mcp-client https://gateway.pipeworx.io/chess
+```json
+{
+  "mcpServers": {
+    "pipeworx": {
+      "url": "https://gateway.pipeworx.io/mcp"
+    }
+  }
+}
 ```
+
+## Using with ask_pipeworx
+
+Instead of calling tools directly, you can ask questions in plain English:
+
+```
+ask_pipeworx({ question: "your question about Chess data" })
+```
+
+The gateway picks the right tool and fills the arguments automatically.
+
+## More
+
+- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [pipeworx.io](https://pipeworx.io)
 
 ## License
 
