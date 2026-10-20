@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-chess",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Chess.com MCP — wraps the Chess.com public API (free, no auth)",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-1ba3084303612eba1f4138c2e85807e3c0e3c57a57cb813483985fdbc674e23c",
-    "sourceCommit": "babdd280d475dceddecc9ebf8f2a661712781a81"
+    "sourceHash": "v1-1427abef219a3d0180f36f29badce4804da51ee9d8ccf31603756da2449892ac",
+    "sourceCommit": "b0a4b8e2f3f5b3a4c3f9f2c9a73f91b20d32ce11"
   }
 }
