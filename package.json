@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-chess",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Chess.com MCP — wraps the Chess.com public API (free, no auth)",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "chess",
     "gatewaySlug": "chess",
-    "sourceHash": "v1-d7dc3297ae9f9d6fb322a323f63575d8f7703c163ff51e1718c5bf4850eed51b",
-    "sourceCommit": "4277282d72f9bf55e548b3799aaf737baf22152f"
+    "sourceHash": "v1-ca992ee140fd87e49547d5725e5132ad5d1232b5ec10024efb50c27d3ae819c0",
+    "sourceCommit": "547a3983b42dacf4389ca474860b0a1dee8e6053"
   }
 }
